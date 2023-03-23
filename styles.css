@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-image: url(pexels-rahul-716398.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-position: center;
+    background-position: 20%;
+}
+
+#box{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#box > div{
+    padding: 20px 20px 20px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    max-width: 600px;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    transition: 1s;
+
+}
+
+#box > div:hover{
+    background: rgba(255, 255, 255, 0.106);
+    transition: 1s;
+
+}
+#box > div:first-child{
+    margin-top: 50px;
+}
+input{
+    zoom: 1.5;
+    float: right;
+    color: white;
+    background: transparent;
+    border: 1px white solid;
+    border-radius: 20px;
+    text-align: center;
+}
+::placeholder{
+    color: rgba(128, 128, 128, 0.298);
+}
+
+
+label{
+    float: left;
+}
+
+button{
+    padding: 10px 40px 10px 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    border: solid white 1px;
+    background: transparent;
+    border-radius: 20px;
+    transition: 1s;
+    margin-bottom: 20px;
+    color: white;
+
+}
+button:hover{
+    background: rgba(255, 255, 255, 0.106);
+    color: white;
+    transition: 1s;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    input{
+        zoom: 1;
+       
+    }
+    #box > div{
+        padding: 10px 10px 10px 10px;
+        
+        font-size: smaller;
+    }
+}

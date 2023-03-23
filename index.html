@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Passoword Generator</title>
+</head>
+
+<body>
+
+    <div id="box">
+
+        <div>
+            <label for="length">Length:</label>
+            <input type="number" id="length" name="length" min="6" max="30" value="6"><br>
+        </div>
+
+        <div>
+            <input type="checkbox" id="numbers" name="numbers">
+            <label for="numbers">Numbers (0-9)</label> <br>
+        </div>
+
+        <div>
+            <input type="checkbox" id="symbols" name="symbols">
+            <label for="symbols">Symbols (!@#$%^&*)</label> <br>
+        </div>
+
+
+        <div>
+            <input type="checkbox" id="letters" name="letters">
+            <label for="letters">Letters (A-Z)</label> <br>
+        </div>
+
+        <div>
+            <label for="word">Word to include</label>
+            <input type="text" id="word" name="word" placeholder="(optional)" value="" min="lenght"> <br>
+
+        </div>
+
+        <div>
+            <label for="capitalize">Capitalize</label> 
+            <input type="checkbox" id="capitalize" name="capitalize"> <br>
+
+        </div>
+
+
+        <button type="submit" value="Submit" onclick="submit()">Submit </button>
+        <p>Your Password is: <tag id="Password"></tag>
+        </p>
+
+    </div>
+
+
+</body>
+
+</html>
